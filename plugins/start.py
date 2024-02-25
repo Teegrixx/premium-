@@ -47,8 +47,8 @@ async def start(client, message):
 	**Document Or Video** and enter new filename to rename it__
 	""", reply_to_message_id=message.id,
                                  reply_markup=InlineKeyboardMarkup(
-                                     [[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 🌨️"  ,url="https://t.me/Kdramaland")],
-                                      [InlineKeyboardButton("Sᴜʙsᴄʀɪʙᴇ 💖", url="https://youtube.com/@Captain_Snowball")]]))
+                                     [[InlineKeyboardButton("SUPPORT 🐐 "  ,url="https://t.me/grixxtech")],
+                                      [InlineKeyboardButton("OWNER 🐮 ", url="https://t.me/teegrixx")]]))
         return
     if id:
         if old == True:
@@ -60,8 +60,8 @@ async def start(client, message):
 	**Document Or Video** and enter new filename to rename it__
 	""", reply_to_message_id=message.id,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 🌨️"  ,url="https://t.me/Kdramaland")], 
-                                              [InlineKeyboardButton("Sᴜʙsᴄʀɪʙᴇ 💖", url="https://youtube.com/@Captain_Snowball")]]))
+                                             [[InlineKeyboardButton("SUPPORT 🐐"  ,url="https://t.me/grixxtech")], 
+                                              [InlineKeyboardButton("OWNER 🐮", url="https://t.me/teegrixx")]]))
             except:
                 return
         else:
@@ -76,9 +76,8 @@ async def start(client, message):
 	**Document Or Video** and enter new filename to rename it__
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 🌨️"  ,url="https://t.me/Kdramaland")], 
-                                          [InlineKeyboardButton("Sᴜʙsᴄʀɪʙᴇ 💖", url="https://youtube.com/@Captain_Snowball")]]))
-
+                                         [[InlineKeyboardButton("SUPPORT 🐐"  ,url="https://t.me/grixxtech")], 
+                                          [InlineKeyboardButton("OWNER 🐮", url="https://t.me/teegrixx")]]))
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):
@@ -91,7 +90,7 @@ async def send_doc(client, message):
             await message.reply_text("**__You are not subscribed my channel__** ",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 🌨️"  ,url=f"https://t.me/{update_channel}")]]))
+                                         [[InlineKeyboardButton("CHANNEL 📱 "  ,url=f"https://t.me/{update_channel}")]]))
             return
     try:
         bot_data = find_one(int(botid))
@@ -106,7 +105,7 @@ async def send_doc(client, message):
         daily = user_deta["daily"]
         user_type = user_deta["usertype"]
     except:
-        await message.reply_text("database has been Cleared click on /start")
+        await message.reply_text("Database has been Cleared click on /start")
         return
 
     c_time = time.time()
