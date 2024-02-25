@@ -11,4 +11,4 @@ async def start(client,message):
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
 	bot_get = await client.get_me()
-	await message.reply_text(f"Total User:- {total_user()}\nBot :- @{bot_get.username}\nCreator :- @Snowball_Official\nLanguage :-Python3\nLibrary :- Pyrogram\nServer :- Heroku\nTotal Renamed File :-{total_rename}\nTotal Size Renamed :- {humanbytes(int(total_size))} ",quote=True)
+	await message.reply_text(f"Total User:- {total_user()}\nBot :- @{bot_get.username}\nCreator :- @teegrixx\nLanguage :-Python3\nLibrary :- Pyrogram\nServer :- Heroku\nTotal Renamed File :-{total_rename}\nTotal Size Renamed :- {humanbytes(int(total_size))} ",quote=True)
